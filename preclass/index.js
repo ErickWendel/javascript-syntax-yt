@@ -15,12 +15,12 @@ Date.prototype.getFullYear = () => CURRENT_YEAR
 
 
 {
-    const entityBase = new Employee({
+    const employee = new Employee({
         name: 'Test',
         gender: GENDER.female
     })
 
-    assert.throws(() => entityBase.birthYear, { message: 'you must define age first!' })
+    assert.throws(() => employee.birthYear, { message: 'you must define age first!' })
 }
 
 {
