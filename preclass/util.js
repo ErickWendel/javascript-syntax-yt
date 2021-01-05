@@ -6,9 +6,8 @@ class Util {
 
     static unFormatCurrency(value) {
         
-        const onlyValues = value.replace(/^R\$\s(\d+).(\d+),(\d+)$/, '$1$2.$3')
-        
-        return parseFloat(onlyValues)
+        const onlyValues = Number(value.replace(/\D/g, '')) / 100
+        return onlyValues
     }
 }
 
