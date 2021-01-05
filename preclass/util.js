@@ -7,6 +7,7 @@ class Util {
     static unFormatCurrency(value) {
         
         const onlyValues = Number(value.replace(/\D/g, '')) / 100
+        
         return onlyValues
     }
 }
