@@ -1,12 +1,40 @@
+EntityBase 
+    all
+Employee 
+     return Intl.NumberFormat("pt-br",
+            { currency: 'BRL', style: "currency" }
+    ).format(this.#grossPay)
 
-Conta 
-    sacar 
-    saldo 
+index.js 
+    import Employee
+    const employee = new Employee({
+        name: 'test',
+    })
+    console.log('grossPay', employee.grossPay)
 
-ContaPopança
+util.js
+    formatCurrency
+Employee
+    change grossPay
+    add netPay
+index.js
+    console.log('netPay', employee.netPay)
+test 
+    all employee
 
-ContaCorrente
+manager.js 
+    all 
+util 
+    unFormat 
+manager.js 
+    add unFormat
 
-Pessoa
+index.js 
+    all manager 
+
+
+
+
+
 
 https://stackoverflow.com/a/65568607/4087199

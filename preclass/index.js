@@ -9,9 +9,6 @@ const GENDER = {
     female: 'female'
 }
 
-// mock year
-const CURRENT_YEAR = 2021
-Date.prototype.getFullYear = () => CURRENT_YEAR
 
 
 {
@@ -22,6 +19,10 @@ Date.prototype.getFullYear = () => CURRENT_YEAR
 
     assert.throws(() => employee.birthYear, { message: 'you must define age first!' })
 }
+
+// mock year
+const CURRENT_YEAR = 2021
+Date.prototype.getFullYear = () => CURRENT_YEAR
 
 {
 

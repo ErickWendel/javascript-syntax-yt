@@ -6,11 +6,15 @@ class Employee extends EntityBase {
     #grossPay = 5000.40
 
     get grossPay() {
+        // return Intl.NumberFormat("pt-br",
+        //     { currency: 'BRL', style: "currency" }
+        // ).format(this.#grossPay)
         return Util.formatCurrency(this.#grossPay)
     }
 
     get netPay() {
-        return Util.formatCurrency(this.#grossPay - (this.#grossPay * Employee.#TAXES_PERCENTUAL))
+        const result = this.#grossPay - (this.#grossPay * Employee.#TAXES_PERCENTUAL)
+        return Util.formatCurrency(result)
     }
 
 }
