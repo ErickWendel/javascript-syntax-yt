@@ -7,7 +7,7 @@ Employee
 
 index.js 
     import Employee
-    const employee = new Employee({
+ s   const employee = new Employee({
         name: 'test',
     })
     console.log('grossPay', employee.grossPay)
